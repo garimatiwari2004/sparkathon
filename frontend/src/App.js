@@ -23,14 +23,8 @@ function App() {
         <Route path="/" element={<><Hero /> <HowItWorks/> <ReturnableItems/> <FAQSection/> <ContactSection/> </>} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={
-          <PrivateRoute>
-          <Dashboard />
-          </PrivateRoute>} />
-        <Route path="/scanner" element={
-          <PrivateRoute>
-          <QRScanner />
-          </PrivateRoute>} /> 
+        <Route path="/dashboard" element={<Dashboard />}/>
+        <Route path="/scanner" element={ <QRScanner /> }/>
         <Route path="/working" element={<HowItWorks />} /> 
       </Routes>
       <Footer />
