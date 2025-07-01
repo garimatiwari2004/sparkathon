@@ -9,7 +9,7 @@ export default function HowItWorks() {
     },
     {
       title: 'Return the Bottle',
-      desc: 'Drop the used bottle at a ReCircle collection point.',
+      desc: 'Place the return request for the empty bottle.',
       emoji: '🧴',
     },
     {
@@ -23,11 +23,11 @@ export default function HowItWorks() {
     <section className="bg-white py-12 px-4 text-center">
       <h2 className="text-3xl font-bold text-gray-800 mb-8">How It Works</h2>
 
-      <div className="flex flex-col md:flex-row gap-6 justify-center">
+      <div className="flex flex-col md:flex-row gap-6 justify-center ">
         {steps.map((step, index) => (
           <div
             key={index}
-            className="bg-gray-100 p-6 rounded-xl shadow-md w-full md:w-64 hover:scale-105 transition-transform"
+            className="bg-gray-100 p-6 rounded-xl shadow-md w-full md:w-64 hover:scale-105  transition-transform"
           >
             <div className="text-5xl mb-4">{step.emoji}</div>
             <h3 className="text-xl font-semibold mb-2">{step.title}</h3>

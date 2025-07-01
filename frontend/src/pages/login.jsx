@@ -6,13 +6,15 @@ export default function Login() {
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-const handleSubmit = (e) => {
+
+ const handleSubmit = (e) => {
   e.preventDefault();
 
-  // Simulate login success
-  localStorage.setItem('userLoggedIn', 'true');
-  window.location.href = '/dashboard';
+  // Simulate signup success
+  localStorage.setItem('isLoggedIn', 'true');
+  window.location.href = '/';
 };
+
   return (
     <div className="flex flex-col justify-center items-center min-h-screen bg-gray-50">
         

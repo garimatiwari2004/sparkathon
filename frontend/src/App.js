@@ -9,6 +9,9 @@ import PrivateRoute from './routes/PrivateRoute';
 import QRScanner from './pages/qrscanner';
 import Footer from './components/footer';
 import HowItWorks from './components/working';
+import ReturnableItems from './components/returnableitems';
+import FAQSection from './components/faq';
+import ContactSection from './components/contact';
 
 function App() {
   return (
@@ -17,7 +20,7 @@ function App() {
       <Navbar />
       <Routes>
         {/* <Route path="/" element={<h2>Recircle</h2>} /> */}
-        <Route path="/" element={<><Hero /> <HowItWorks/> </>} />
+        <Route path="/" element={<><Hero /> <HowItWorks/> <ReturnableItems/> <FAQSection/> <ContactSection/> </>} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={
