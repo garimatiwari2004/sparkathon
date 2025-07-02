@@ -27,8 +27,8 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="bg-white py-12 px-4 text-center">
-      <h2 className="text-3xl font-bold text-gray-800 mb-8">How It Works</h2>
+    <section className="bg-white py-12 px-4 text-center" id='target'>
+      <h2 className="text-3xl font-bold text-gray-800 mb-8 mt-10">How It Works</h2>
 
       <div className="flex flex-col md:flex-row gap-6 justify-center ">
         {steps.map((step, index) => (

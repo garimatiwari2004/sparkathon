@@ -66,6 +66,13 @@ export default function ReturnableItems() {
   return (
     <section className="py-16 px-4 text-center bg-gray-50">
       <h2 className="text-3xl font-bold text-gray-800 mb-10">Returnable Items</h2>
+      <div className='text-lg text-gray-700 mb-8 leading-relaxed px-10'>
+        Ran out of your facourite products? No worries! Here are some of the items you can return to earn ETS points. 
+        <br></br>And guess what?
+        You may use these points to get yourself some discount on the next one.
+        <br></br>
+        🌱 Snapcycle gives you ETS Points every time you return an empty product bottle. <br></br>Exchange points for rewards, or just track your eco impact! 
+      </div>
 
       <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch transition-all duration-500">
         {visibleItems.map((item, index) => (

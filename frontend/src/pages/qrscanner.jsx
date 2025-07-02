@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState, useRef } from 'react';
 import { Html5Qrcode } from 'html5-qrcode';
-import WinButton from '../components/winbutton';
+
 
 export default function QRScanner() {
   const [scanned, setScanned] = useState(null);
@@ -98,8 +98,7 @@ export default function QRScanner() {
         className="mt-2"
       />
 
-      {/* Optional WinButton below */}
-      <WinButton />
+     
     </div>
   );
 }

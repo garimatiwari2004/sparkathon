@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import skincare from "../assets/skincare.jpg";
-import haircare from "../assets/haircare.jpeg";
 import skincare2 from "../assets/skincare2.jpg";
 
 export default function Hero() {
@@ -16,20 +14,21 @@ export default function Hero() {
             <span className="text-blue-600">Snap It & Recycle It</span>
           </h1>
           <p className="mt-4 text-lg text-gray-600">
-            Recycling meets rewards - scan your QR, track your returns and power a greener tomorrow
+            Recycling meets rewards - scan your QR, track your returns and power
+            a greener tomorrow
           </p>
           <div className="flex flex-col md:flex-row gap-4 mt-6">
-            <Link
-              to="/login"
+            <a
+              href="#target"
               className="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700 transition text-center"
             >
-              Login
-            </Link>
+              How it Works
+            </a>
             <Link
-              to="/scanner"
+              to="/login"
               className="bg-green-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-green-700 transition text-center"
             >
-              Scan Product
+             Get Started
             </Link>
           </div>
         </div>
