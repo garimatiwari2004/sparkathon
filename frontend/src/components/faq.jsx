@@ -27,14 +27,15 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-16 px-4 bg-white text-gray-800 max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
-      <div className="space-y-4">
+    <section className="mx-auto py-16 px-4 bg-[#03071e] text-white w-screen  rounded-lg">
+      
+      <h2 className="  text-3xl font-bold text-center mb-8 ">Frequently Asked Questions</h2>
+      <div className=" px-14 space-y-4 bg-[#03071e]">
         {faqs.map((faq, index) => (
           <div key={index} className="border border-gray-300 rounded-lg">
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full text-left px-6 py-4 flex justify-between items-center font-medium hover:bg-gray-100 transition"
+              className="w-full text-left px-6 py-4 flex justify-between items-center font-medium hover:bg-gray-600 transition"
             >
               {faq.question}
               <span>{openIndex === index ? '−' : '+'}</span>
@@ -45,6 +46,7 @@ export default function FAQSection() {
           </div>
         ))}
       </div>
+    
     </section>
   );
 }

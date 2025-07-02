@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import ResultPage from './pages/result';
 
 import Signup from './pages/signup';
 import Login from './pages/login';
@@ -23,8 +24,10 @@ function App() {
         <Route path="/" element={<><Hero /> <HowItWorks/> <ReturnableItems/> <FAQSection/> <ContactSection/> </>} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        
         <Route path="/dashboard" element={<Dashboard />}/>
         <Route path="/scanner" element={ <QRScanner /> }/>
+        <Route path="/result" element={<ResultPage />} />
         <Route path="/working" element={<HowItWorks />} /> 
       </Routes>
       <Footer />

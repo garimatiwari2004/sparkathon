@@ -3,6 +3,7 @@ import React from 'react';
 export default function ContactSection() {
   return (
     <section className="py-16 px-6 bg-gray-50 text-gray-800">
+     
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl font-bold mt-10 mb-4 text-[#03071e]">Reach Out to Us</h2>
         <p className="mb-10 text-gray-600">
@@ -13,9 +14,9 @@ export default function ContactSection() {
           {/* Contact Info */}
           <div className="text-left flex flex-col align-items-center justify-center justify-content-center">
             <h3 className="text-xl font-semibold mb-4">Contact Details</h3>
-            <p><strong>Email:</strong> team@sparkathon.com</p>
-            <p><strong>Phone:</strong> +91 98765 43210</p>
-            <p><strong>Address:</strong> Bangalore, India</p>
+            <p><strong>Email:</strong> garimatiwari1803@gmail.com</p>
+            <p><strong>Phone:</strong> +91 xxxx</p>
+            <p><strong>Address:</strong> Panipat, Haryana</p>
           </div>
 
           {/* Contact Form */}
@@ -47,6 +48,7 @@ export default function ContactSection() {
           </form>
         </div>
       </div>
+     
     </section>
   );
 }
