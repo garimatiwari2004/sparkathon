@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const faqs = [
   {
     question: 'What is SnapCycle?',
-    answer: 'ReCircle is a smart system that rewards users for returning empty product containers using QR codes and traceable recycling.',
+    answer: 'SnapCycle is a smart system that rewards users for returning empty product containers using QR codes and traceable recycling.',
   },
   {
     question: 'How do I earn ETS points?',
