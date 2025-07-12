@@ -22,7 +22,7 @@ export default function QRScanner() {
             hasScannedRef.current = true;
             console.log('✅ Scanned from camera:', decodedText);
 
-            // ✅ Redirect to result page with scanned code
+        // ✅ Redirect to result page with scanned code
             window.location.href = `/result?code=${encodeURIComponent(decodedText)}`;
 
             if (scanner.isScanning) {
