@@ -27,13 +27,13 @@ export default function Navbar() {
           <>
             <Link
               to="/scanner"
-              className="text-blue-600 hover:text-blue-800 transition"
+              className="text-blue-600 hover:text-pink-800 transition"
             >
               Scan Product
             </Link>
             <Link
               to="/dashboard"
-              className="text-gray-700 hover:text-blue-600 transition"
+              className="text-pink-700 hover:text-blue-600 transition"
             >
               Dashboard
             </Link>

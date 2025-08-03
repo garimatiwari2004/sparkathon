@@ -74,6 +74,9 @@ export default function QRScanner() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
       <h2 className="text-2xl font-bold text-blue-700 mb-4 mt-18">QR Code Scanner</h2>
+      <p className="text-gray-600 mb-4">
+        Scan a QR code using your camera or upload an image to know the product details.
+      </p>
 
       {/* Live camera preview */}
       <div
@@ -88,16 +91,14 @@ export default function QRScanner() {
       ></div>
 
       {/* Upload from gallery */}
-      <label className="mt-4 text-sm font-medium text-gray-700">
+      <label className="mt-4 text-sm font-medium text-gray-700 border-black" type='submit'>
         Or upload QR from gallery:
       </label>
       <input
         type="file"
         accept="image/*"
         onChange={handleImageUpload}
-        className="mt-2"
-      />
-
+        className="mt-2 border-2 border-black-300 rounded p-2 hover:cursor-pointer "></input>
      
     </div>
   );
